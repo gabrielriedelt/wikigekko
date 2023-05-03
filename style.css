@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+*{
+    font-family: 'VALORANT', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: mediumpurple; */
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+header{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: beige;
+}
+.img-gekko{
+    background-color: mediumpurple;
+    height: 0vh;
+    z-index: 1;
+}
+.img-gekko img{
+    height: 150vh;
+}
+.conteudo-gekko{
+    background-color: greenyellow;
+    height: 400px;
+    width: 100%;
+    z-index: 0;
+   
+}
+.conteudo-gekko p{
+    
+    font-size: 20px;
+    line-height: 30px;
+    width: 40vw;
+    margin-left: 60%;
+}
+.conteudo-gekko h1{
+    margin-bottom: 40px;
+    margin-left: 57%;
+    margin-top: 0px;
+}
+.conteudo-gekko p,.conteudo-gekko h1{
+    color: black;
+}
+.conteudo-gekko .agente p{
+    margin-left: 25%;
+    padding-top: 2%;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.hab-gekko{
+    display: block;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: mediumpurple;
+    width: 55%;
+    height: auto;
+    z-index: 0;
+    padding-left: 45%;
+    color: aliceblue;
+}
+.hab-gekko img{
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    padding-right: 70px;
+}
+
+.desc-habilidade{
+    display: none;  
+}
+input:checked + .habilidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(50px);  
+    transition: transform 0.5s ease; /* adiciona a transição para a propriedade transform */
+
+}
+input:checked + .habilidade .desc-habilidade{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked + .habilidade .desc-habilidade p {
+    width: 60%;
+}
+
+.desc-habilidade img{
+    width: 40%;
+    height: 300px;
+}
+.video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #5a43d3;
+}
+.video iframe{
+    width: 600px;
+    height: 400px;
+}
+.video p{
+    padding-right: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #dbf270;
+
+}
+body {
+    overflow-x: hidden;
+  }
